@@ -1,0 +1,107 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>TaskMaster - Organize suas tarefas</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+</head>
+<body>
+    <div class="min-h-screen bg-gradient">
+        <div class="container">
+          <header class="header">
+            <div class="logo">
+              <div class="logo-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <rect width="18" height="18" x="3" y="3" rx="2" />
+                  <path d="m9 12 2 2 4-4" />
+                </svg>
+              </div>
+              <span class="logo-text">Task<span class="text-purple">Flow</span></span>
+            </div>
+          </header>
+    
+          <div class="hero-section">
+            <div class="hero-content">
+              <h1 class="hero-title">
+                Organize suas tarefas, <span class="text-purple">aumente sua produtividade</span>
+              </h1>
+              <p class="hero-description">
+                Ta ajuda você a gerenciar suas tarefas de forma eficiente, para que possa focar no que realmente importa.
+              </p>
+              <div class="hero-buttons">
+                <button class="btn btn-primary btn-lg">Começar</button>
+              </div>
+            </div>
+            <div class="auth-container">
+              <div class="auth-card">
+                <div class="auth-header">
+                  <div class="logo-container">
+                    <div class="logo-icon logo-icon-lg">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <rect width="18" height="18" x="3" y="3" rx="2" />
+                        <path d="m9 12 2 2 4-4" />
+                      </svg>
+                    </div>
+                  </div>
+                  <h2 class="auth-title">Bem-vindo</h2>
+                  <p class="auth-subtitle">Gerencie suas tarefas de forma eficiente</p>
+                </div>
+                
+                <div class="tabs">
+                  <div class="tabs-list">
+                    <button class="tab-trigger active" data-tab="login">Login</button>
+                    <button class="tab-trigger" data-tab="register">Cadastro</button>
+                  </div>
+                  
+                  <div class="tab-content">
+                    <div class="tab-pane active" id="login-tab">
+                      <form id="login-form" class="form">
+                        <div class="form-group">
+                          <label for="email" class="form-label">Email</label>
+                          <input id="email" type="email" class="form-input" placeholder="m@exemplo.com" required>
+                        </div>
+                        <div class="form-group">
+                          <label for="password" class="form-label">Senha</label>
+                          <input id="password" type="password" class="form-input" required>
+                        </div>
+                        <div class="form-row">
+                          <div class="form-check">
+                            <input type="checkbox" id="remember" class="form-checkbox">
+                            <label for="remember" class="form-check-label">Lembrar-me</label>
+                          </div>
+                          <a href="#" class="form-link">Esqueceu a senha?</a>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-block" id="login-button">Login</button>
+                      </form>
+                    </div>
+                    
+                    <div class="tab-pane" id="register-tab">
+                      <form id="register-form" class="form">
+                        <div class="form-group">
+                          <label for="name" class="form-label">Nome</label>
+                          <input id="name" type="text" class="form-input" placeholder="Seu nome completo" required>
+                        </div>
+                        <div class="form-group">
+                          <label for="register-email" class="form-label">Email</label>
+                          <input id="register-email" type="email" class="form-input" placeholder="m@exemplo.com" required>
+                        </div>
+                        <div class="form-group">
+                          <label for="register-password" class="form-label">Senha</label>
+                          <input id="register-password" type="password" class="form-input" required>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-block" id="register-button">Criar conta</button>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+  <script src="script.js"></script>
+</body>
+</html>
